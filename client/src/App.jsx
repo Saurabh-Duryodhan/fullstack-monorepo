@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   const getUser = async () => {
-    const response = await fetch('http://localhost:8091/data')
+    const response = await fetch('/api/data')
     const data = await response.json()
     return data
   }
